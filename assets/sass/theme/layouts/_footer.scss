@@ -1,0 +1,67 @@
+//Style Footer
+.scrollup {
+    border-radius: 100%;
+    color: #151515 !important;
+    cursor: pointer;
+    height: 50px;
+    left: 0;
+    margin: auto;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    top: -30px;
+    width: 50px;
+    z-index: 999;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    line-height: 46px;
+    &:hover{
+        background: $theme-color;
+        color: #FFF !important;
+    }
+}
+
+#na-footer {
+    font-weight: 400;
+    background:$footer-bg;
+    color:$footer-color ;
+    font-size: 15px;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    .footer-top{
+        padding-top: 100px;
+        text-align: center;
+    }
+    .footer-center {
+        position: relative;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        background: $footer-bg-bottom;
+        padding: 30px 0;
+        font-size: 14px;
+        line-height: 30px;
+        .coppy-right {
+            @include rtl-text-align-left();
+            a {
+                color:$color-title;
+                font-weight: 500;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .bizi-image-content{
+        padding: 100px 0 50px;
+    }
+
+    .fa-heart{
+        color: $theme-color;
+    }
+}

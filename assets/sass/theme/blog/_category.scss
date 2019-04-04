@@ -1,0 +1,148 @@
+/*Style category blog*/
+.archive_description{
+    text-transform: capitalize;
+    color: #f2f2f2;
+}
+.title-page,.title-cat{
+    margin:30px 0 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+
+.archive-blog{
+    .box-small  article{
+        margin-bottom: 0px;
+    }
+    .item-post{
+        &:last-child article{
+            margin-bottom: 0;
+        }
+    }
+    .entry-content{
+        padding-bottom: 10px;
+        color: #959595;
+        h1,h2,h3,h4,h5{
+            //font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .entry-action{
+        padding-top: 10px;
+        @include rtl-padding-left(30px);
+    }
+    .entry-title{
+        font-size: 18px;
+        padding: 0;
+        font-weight: 500;
+        margin-top: 15px;
+        line-height: 24px;
+    }
+    .posted-on{
+        padding: 0;
+    }
+
+    .author {
+        text-transform: capitalize;
+        font-size: 12px;
+    }
+    .icon-icon_tag{
+        @include rtl-padding-right(5px);
+    }
+    .post-image{
+        padding-bottom: 0;
+        @include rtl-text-align-left();
+        img{
+            border-radius: 5px;
+        }
+    }
+    .post-cat{
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .comments-link{
+        i{
+            @include rtl-padding-right(1px);
+        }
+    }
+    .full-width{
+        .article-meta{
+            margin-top: 5px;
+            position: relative;
+            width: 100%;
+            display: block;
+            @include rtl-padding(10px,20px ,20px, 0);
+        }
+    }
+    .share-links{
+        opacity: 0;
+        left: 0;
+        margin-top: -15px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include transition(0.4s);
+        .social-item{
+            background: transparent;
+            box-shadow:none;
+            margin: 5px;
+            &:hover{
+                background: transparent;
+            }
+            > a{
+                font-size: 26px;
+            }
+
+        }
+    }
+    .bgr-item {
+        bottom: 0;
+        left: 0;
+        opacity: 0.7;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 5px;
+        @include transition(0.4s);
+    }
+    .post-item:hover{
+        .share-links{
+            opacity: 1;
+            @include transition(0.4s);
+        }
+        .bgr-item {
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 1;
+            @include transition(0.4s);
+        }
+    }
+
+}
+.content-area{
+    margin-bottom: 30px;
+}
+.by{
+    text-transform: capitalize;
+    font-size: 14px !important;
+    @include rtl-padding-right(5px);
+}
+.author {
+    font-size: 14px;
+    >a{
+        color: #757575;
+        font-size: 14px;
+        font-weight: 500;
+        @include rtl-padding-right(30px);
+    }
+}
+

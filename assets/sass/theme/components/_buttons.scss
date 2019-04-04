@@ -1,0 +1,38 @@
+//button-variables-outline($color, $background, $border, $colorhover, $bghover, $borderhover )
+
+.btn-outline{
+  @include button-variables-outline($theme-color, transparent, $theme-color, $theme-color, transparent, $theme-color);
+}
+
+.btn-inverse{
+    @include button-variables-outline($white, $theme-color , $theme-color ,$white, $theme-color ,  $theme-color);
+}
+
+.btn-variant{
+    @include button-variables-outline($white, $theme-color , $theme-color ,$white,darken($theme-color, 10%),  darken($theme-color, 10%));
+    padding: 10px 30px;
+}
+
+.button{
+    @include button-variables-outline($white, #282828 , #282828 , $white, $theme-color ,  $theme-color);
+    padding:12px 50px;
+    border-width:0;
+}
+
+#loadMore,#loadMoreCat{
+    box-shadow:none;
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: #282828;
+    font-size: 16px;
+    display: block;
+    margin: 15px auto;
+    @include transition(0.4s);
+    text-align: center;
+    &:hover{
+        color: $theme-color;
+        @include transition(0.4s);
+    }
+}

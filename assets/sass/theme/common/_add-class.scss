@@ -1,0 +1,55 @@
+// add class
+
+//no padding
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.inline{
+    input{
+        height:auto;
+    }
+}
+.center{
+    text-align: center;
+}
+
+.js-vc_parallax-o-image {
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-position: 0 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ads-item > *{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.ads-item.col-xs-6 > * {
+    background: #fff none repeat scroll 0 0;
+    padding: 15px;
+}
+.layout-list{
+    .ads-item > *{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+.ads_content_single{
+    @include rtl-float-right();
+    @include rtl-padding-left(30px);
+    padding-bottom:30px;
+}
+.advertising_content_single{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.has-padding-top{
+    padding-top: 60px;
+}
